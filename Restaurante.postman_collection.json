@@ -1,0 +1,936 @@
+{
+	"info": {
+		"_postman_id": "7327449b-8fad-4dca-90b6-8d5035b1ad12",
+		"name": "Restaurante",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19210355",
+		"_collection_link": "https://universal-comet-358417.postman.co/workspace/Faculdade-IESB~18864b63-7f35-4a29-9e78-3f47f03370b6/collection/19210355-7327449b-8fad-4dca-90b6-8d5035b1ad12?action=share&source=collection_link&creator=19210355"
+	},
+	"item": [
+		{
+			"name": "/produtos",
+			"item": [
+				{
+					"name": "/produtos/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtos/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtos",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtos?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtos"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtos/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtos/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtos/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/produtos/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/cargos",
+			"item": [
+				{
+					"name": "/cargos/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/cargos/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"cargos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cargos",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/cargos?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"cargos"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cargos/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/cargos/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"cargos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cargos/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/cargos/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"cargos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/clientes",
+			"item": [
+				{
+					"name": "/clientes/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/clientes/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/clientes?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/clientes/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/clientes/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/comandas",
+			"item": [
+				{
+					"name": "/comandas/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/comandas/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"comandas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/comandas",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/comandas?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"comandas"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/comandas/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/comandas/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"comandas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/comandas/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/comandas/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"comandas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/produtosComandas",
+			"item": [
+				{
+					"name": "/produtosComandas/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtosComandas/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosComandas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtosComandas",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtosComandas?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosComandas"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtosComandas/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtosComandas/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosComandas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtosComandas/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/produtosComandas/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosComandas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/formaPagamamento",
+			"item": [
+				{
+					"name": "/formaPagamamento/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/formaPagamamento/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"formaPagamamento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/formaPagamamento",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/formaPagamamento?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"formaPagamamento"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/formaPagamamento/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/formaPagamamento/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"formaPagamamento",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/formaPagamamento/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/formaPagamamento/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"formaPagamamento",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/funcionario",
+			"item": [
+				{
+					"name": "/funcionario/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/funcionario/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"funcionario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/funcionario",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/funcionario?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"funcionario"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/funcionario/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/funcionario/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"funcionario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/funcionario/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/funcionario/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"funcionario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/produtosIngredientes",
+			"item": [
+				{
+					"name": "/produtosIngredientes/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtosIngredientes/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosIngredientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtosIngredientes",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtosIngredientes?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosIngredientes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtosIngredientes/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/produtosIngredientes/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosIngredientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/produtosIngredientes/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/produtosIngredientes/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"produtosIngredientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/tipos",
+			"item": [
+				{
+					"name": "/tipos/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/tipos/1",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"tipos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tipos",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/tipos?page=1&perPage=10",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"tipos"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tipos/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{urlbase}}/tipos/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"tipos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tipos/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Coca-cola 2l\",\n    \"preco\": \"10.00\",\n    \"tamanho\": \"2 l\",\n    \"tipoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{urlbase}}/tipos/2",
+							"protocol": "http",
+							"host": [
+								"{{urlbase}}"
+							],
+							"path": [
+								"tipos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "urlbase",
+			"value": "localhost:3333",
+			"type": "string"
+		}
+	]
+}
