@@ -1,4 +1,6 @@
-import { BaseModel, column } from '@adonisjs/lucid/orm'
+import { BaseModel, belongsTo, column } from '@adonisjs/lucid/orm'
+import Tipo from './tipo.js'
+import type { BelongsTo } from '@adonisjs/lucid/types/relations'
 
 export default class Produto extends BaseModel {
   @column({ isPrimary: true })
@@ -15,4 +17,7 @@ export default class Produto extends BaseModel {
 
   @column()
   declare tipoId: number
+
+  @belongsTo(() => Tipo)
+  declare tipo: BelongsTo<typeof Tipo>
 }
